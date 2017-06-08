@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+}
+.flex{
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction:column;
+}
+.heard{
+  flex-shrink: 0;
+  position: relative;
+  width: 31.26rem;
+  height: 5.26rem;
+  font-size: 1.36rem;
+  padding-top: 1.84rem;
+  background: url('./images/搜索/u62.png') no-repeat;
+  background-size: 100% 100%;
+  color:#fff;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.heard .diqu{
+  padding-left: 0.88rem;
+}
+.heard .search{
+  padding-right: 1.8rem;
+}
+.main{
+  flex-grow: 1;
+  display: flex;
+  overflow-y: auto;
+  position:relative;
+}
+.footer{
+  flex-shrink: 0;
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  width: 31.26rem;
+  height: 4.1rem;
+  position: relative;
+  z-index: 100;
+  background: #000;
+}
+
+.footer .active{
+  color:red;
+}
+.footer .actied:visited{
+  color:red;
+}
+.footer .active:focus{
+  color:red;
+}
+.footer a{
+  padding-top: 0.9rem;
+  width: 3.8rem;
+  height: 4.1rem;
+  text-align: center;
+  position: relative;
+  color:#ccc;
+}
+.footer a:nth-child(3) img:nth-child(3){
+  width:3.8rem;
+  left:0;
+}
+.footer a:nth-child(3) img:nth-child(1),.footer a:nth-child(3) img:nth-child(2){
+  width: 2.76rem;
+  left:0.55rem;
+  bottom:2.25rem;
+}
+.footer a img:nth-child(1){
+  opacity: 0;
+}
+.footer .active img:nth-child(1){
+  z-index: 10;
+  opacity: 1;
+}
+.footer img{
+  position: absolute;
+  left:0.9rem;
+  bottom:1.65rem;
+  display: block;
+  width:2.08rem;
+}
+.footer span{
+  position: absolute;
+  bottom:0.1rem;
+  left:1.1rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 0.8rem;
+
+}
+/*home*/
+.renwu{
+  width:100%;
+  background:#ccc;
+}
+.renwu .div1{
+  width:31.26rem;
+  height:8.95rem;
+  overflow-x: auto;
+}
+.renwu .div2{
+  height:8.95rem;
+  display: flex;
+  justify-content:space-around;
+}
+.renwu .div2>div{
+  position: relative;
+  border-radius: 0.5rem;
+  padding:0.6rem;
+  float: left;
+  background:#fff;
+  width:15rem;
+  height:8.95rem;
+}
+.renwu>h2,.tuijian>h2{
+  background:#ccc;
+  text-align: center;
+  color:red;
+  font-size: 0.12rem;
+  line-height: 3.3rem
+}
+.tuijian .div1{
+  display: flex;
+  justify-content:space-around;
+}
+.tuijian .div1 img{
+  display: block;
+  height: 8rem;
+}
+/*find*/
+.find{
+  width: 100vw;
+  background: #ccc;
+  overflow-y: auto;
+}
+.find .card{
+  padding-right: 0.4rem;
+  width: 29.44rem;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+  margin-top: 2.14rem;
+  background: #fff;
+}
+.find .card .useheard{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+
+  margin-top:-0.56rem;
+  margin-left:-0.56rem;
+}
+.find .card .name{
+  display: inline;
+  padding-left: 1.1rem;
+  color:#006166;
+  font-size: 1rem;
+  line-height: 2.86rem;
+  height: 2.86rem;
+
+}
+.find .card .name>img{
+  width: 0.6rem;
+}
+.find .card .useimg{
+  width: 100%;
+  padding-left: 1.8rem;
+}
+.find .card .useimg img{
+  width: 8.74rem;
+  height: 8.8rem;
+  margin-left: 0.33rem;
+}
+.usefooter{
+  padding-left: 1.8rem;
+  line-height: 3.08rem;
+  height: 3.08rem;
+  font-size: 0.55rem;
+  color:#8E8E93;
+
+}
+.usefooter>span:nth-child(3){
+  opacity: 0.7;
+}
